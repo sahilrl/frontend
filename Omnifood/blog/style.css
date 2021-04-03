@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: Helvetica Neue, Arial;
+  font-size: 18px;
+}
+
+.container{
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    color: green;
+    font-size: 40px;
+    font-family: Helvetica Neue, Arial;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18 px;
+    text-align: justify;
+    font-family: Helvetica Neue, Arial;
+    background-color: rgb(231, 231, 231);
+}
+
+.main-text {
+    text-align: justify;
+}
+#movie {
+    font-size: 55px
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    text-align: center;
+
+}
+.other-posts {
+    margin-top: 50px;
+    padding: 50px;
+    width: 25%;
+    float: right;
+}
+
