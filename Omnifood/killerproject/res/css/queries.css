@@ -1,0 +1,57 @@
+/* Big tablet to 1200px : widths smaller than 1140px row  */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 5% 10% 0 10%; 
+    }
+    .row { padding: 0 2%; }
+
+    .steps-box:first-child { margin-left: -25%; }
+    
+}
+
+
+
+/* small tablets to big tablets : from 769px to 1024px */
+@media only screen and (max-width: 1024px) {
+    body { font-size: 18px;}
+    section { padding: 60px 0; }
+    .steps-box:first-child { margin-left: -25%; ; }
+
+    
+       
+
+}
+
+
+/* small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 802px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 5% 10% 0 10%; 
+    }
+    .main-nav {
+        margin: 0;
+        padding: 4%;
+        
+    }
+
+    .logo {
+        height: 100px;
+        width: auto;
+    }
+    
+       
+
+}
+
+
+
+/* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 5% 10% 0 10%;
+       
+
+}

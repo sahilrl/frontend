@@ -194,6 +194,7 @@ header {
 
 .hero-text-box {
     position: absolute;
+    box-sizing: border-box;
     width: 1140px;
     top: 50%;
     left: 50%;
