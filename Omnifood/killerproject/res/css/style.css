@@ -18,7 +18,7 @@
 
 html {
     background-color: #fff;
-    text-color: #555;
+    color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -261,7 +261,7 @@ header {
 
 }
 
-.main-nav { margin-top: 20px; }
+/* .main-nav { margin-top: 20px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -270,7 +270,7 @@ header {
 }
 
 .sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
+.sticky .logo-black { display: block; } */
 
 /* ------------------------------------------ */
 /* Features*/
