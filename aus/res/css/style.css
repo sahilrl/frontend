@@ -1,0 +1,293 @@
+/* --------------------------------------------- */
+/* Purple #8066ec ----------------------------- 
+   Aqua #78e4e7 ------------------------------*/
+/* ------------------------------------------ */
+
+
+/* ------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;   
+}
+
+
+
+/* ------------------------------------------ */
+/* Reusable components */
+/* ------------------------------------------ */
+
+/* --------section--------------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+.section {
+    padding-top: 80px;
+}
+
+/* --------headings--------------- */
+
+h1, 
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4 px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 180%;
+    word-spacing: 2 px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:  #78e4e7;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+/* --------buttons--------------- */
+
+.btn:link, 
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #8066ec;
+    border: 1px solid #8066ec;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #78e4e7;
+    color: #78e4e7;
+    margin-left: 25px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #78e4e7;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #78e4e7;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #78e4e7;
+    color: #fff;
+
+}
+
+
+
+/* --------Paragraphs--------------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 68%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+/* ------------------------------------------ */
+/* Header */
+/* ------------------------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.logo {
+    height: 300px;
+    width: auto;
+    float: left;
+    margin: -30px 0 0 50px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom: 0,2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #78e4e7;
+
+
+}
+
+.hero-text-box {
+    position: absolute;
+    box-sizing: border-box;
+    width: 1140px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    font-size: 300%;
+    font-weight: 1000;
+}
+
+.cartoon {
+    position: absolute;
+    height: 300px;
+    top: 60%;
+    right: 5%;
+}
+
+
+
+/* ------------------------------------------ */
+/* About */
+/* ------------------------------------------ */
+
+.img-about {
+    padding-left: 5%;
+    /* text-align: right; */
+    height: 350px;
+    width: auto;
+    
+}
+
+.points-about ul li {
+    padding-bottom: 12px;
+    width: 100%;
+    font-size: 105%;
+    font-weight: 250;
+}
+
+.points-about ion-icon {
+    color: #8066ec;
+    margin-right: 6px;
+}
+.points-about ul {
+    padding-top: 9px;
+}
+
+
+/* ------------------------------------------ */
+/* Services */
+/* ------------------------------------------ */
+
+
+.services-row .box {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.services-row .box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    box-sizing: border-box;
+}
+.services-row .box:hover img{
+    transform: scale(1.2);
+}
+
+.services-row .box h3 {
+    position: absolute;
+    top: 150px;
+    font-weight: 350;
+    font-size: 120%;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(3.88deg, #303B47 -12.15%, rgba(255, 255, 255, 0) 293.83%); 
+    padding: 12px 12px;
+    transition: transform 0.5s;
+}
+
+.services-row .box:hover h3 {
+    transform: translateX(-100%);
+}
