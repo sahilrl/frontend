@@ -96,8 +96,8 @@ li {
 .btn:visited,
 input[type=submit] {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 30px;
+    margin-top: 20px;
+    padding: 14px 34px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
@@ -106,8 +106,8 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #8066ec;
-    border: 1px solid #8066ec;
+    /* background-color: #8066ec; */
+    /* border: 1px solid #8066ec; */
     color: #fff;
 }
 
@@ -115,7 +115,7 @@ input[type=submit] {
 .btn-ghost:visited {
     border: 1px solid #78e4e7;
     color: #78e4e7;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 .btn:hover,
@@ -134,6 +134,27 @@ input[type=submit] {
     color: #fff;
 
 }
+
+/* Animated buttons */
+
+.btn-full {
+	background: linear-gradient(-45deg, #8066ec, #000, #23a6d5, #ff00aa);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 
 
@@ -233,8 +254,7 @@ header {
     padding-left: 5%;
     /* text-align: right; */
     height: 350px;
-    width: auto;
-    
+    width: auto;   
 }
 
 .points-about ul li {
@@ -263,6 +283,7 @@ header {
     width: 350px;
     height: 250px;
     overflow: hidden;
+    box-shadow: -10px 10px 20px #555;
 }
 
 .services-row .box img {
@@ -276,18 +297,31 @@ header {
     transform: scale(1.2);
 }
 
-.services-row .box h3 {
+
+.services-row .child {
+    position: relative;
+    top: 160px;
+    width: 250px;
+    height: 70px;
+    overflow: hidden;
+    background: linear-gradient(3.88deg, #303B47 -12.15%, rgba(255, 255, 255, 0) 293.83%);   
+    transition: transform 0.5s; 
+ } 
+
+
+
+.services-row .box  h3 {
     position: absolute;
-    top: 150px;
-    font-weight: 350;
-    font-size: 120%;
-    text-align: center;
     color: #fff;
-    background: linear-gradient(3.88deg, #303B47 -12.15%, rgba(255, 255, 255, 0) 293.83%); 
-    padding: 12px 12px;
     transition: transform 0.5s;
+    padding: 10px 0 0 10px;
 }
 
-.services-row .box:hover h3 {
+/* .services-row .box:hover .child,  */
+.services-row .box:hover .child h3 {
     transform: translateX(-100%);
 }
+
+
+
+
