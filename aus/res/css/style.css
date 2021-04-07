@@ -317,11 +317,22 @@ header {
     padding: 10px 0 0 10px;
 }
 
-/* .services-row .box:hover .child,  */
 .services-row .box:hover .child h3 {
     transform: translateX(-100%);
 }
 
 
+.services-row .box .child p {
+    font-size: 120%;
+    padding: 20px 0 0 50px;
+    transform: translateX(100%); 
+    transition: transform 0.5s; 
+}
+
+.services-row .box:hover .child p {
+    color: #fff;
+    transform: translateX(0%);
 
 
+    
+}
