@@ -37,7 +37,7 @@ html {
 }
 
 .section {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 /* --------headings--------------- */
@@ -196,7 +196,6 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
-    position: relative;
 }
 
 .logo {
@@ -297,7 +296,7 @@ header {
     width: 350px;
     height: 250px;
     overflow: hidden;
-    box-shadow: -10px 10px 20px #555;
+    /* box-shadow: -10px 10px 20px #555; */
 }
 
 .services-row .box img {
@@ -373,35 +372,53 @@ textarea {
 
 *:focus {outline: none;}
 
+.contain {
+    position: relative;
+    width: 75%;
+    margin: 0 15%
+}
 
 
 .contact-form {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 60%;
-    padding: 2% 2%;
-    background: #fff;
+    width: 100%;
+    padding: 3% 3%;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 
 
 .info {
-    margin: 1% auto;
-    box-sizing: border-box;
-    width: 60%;
+    margin: 2% 0 0 0;
+    width: 100%;
     padding: 2%;
     background: #fff;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 
-.boxy {
-    width: 60%
+.info h4 {
+    margin-bottom: 10px;
 }
 
-.inf {
-    padding: 2% 100% 2% 2%;
 
+
+.info ion-icon {
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #8066ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-right: 25px;
+    /* transition: all 0.3s ease-in-out; */
+    
 }
+.info ion-icon:hover {
+    background: #78e4e7;
+} 
 
   .select-box select {
     background-color: #8066ec;

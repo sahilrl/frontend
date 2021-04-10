@@ -159,61 +159,64 @@
                 <h2>We're happy to hear from you</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col  span_1_of_2">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                <div class="contain">
+                    <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col  span_1_of_2">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="col span_1_of_2">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
                         </div>
-                        <div class="col span_1_of_2">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col span_1_of_2">
-                            <input type="text" name="phone" id="phone" placeholder="Your Phone" required>
+                        <div class="row">
+                            <div class="col span_1_of_2">
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="col span_1_of_2 select-box">
+                                <select name="mention-service" id="mention-service ">
+                                    <option value="1">Carpet Steam Cleaning</option>
+                                    <option value="2">Upholstery Steam Cleaning</option>
+                                    <option value="3">Mattress Steam Cleaning</option>
+                                    <option value="4">Vehicle Steam Cleaning</option>
+                                    <option value="5">Tile & Grout Steam Cleaning</option>
+                                    <option value="6">Rug Steam Cleaning</option>
+                                    <option value="7" selected>Mention Service</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col span_1_of_2 select-box">
-                            <select name="mention-service" id="mention-service ">
-                                <option value="1">Carpet Steam Cleaning</option>
-                                <option value="2">Upholstery Steam Cleaning</option>
-                                <option value="3">Mattress Steam Cleaning</option>
-                                <option value="4">Vehicle Steam Cleaning</option>
-                                <option value="5">Tile & Grout Steam Cleaning</option>
-                                <option value="6">Rug Steam Cleaning</option>
-                                <option value="7" selected>Mention Service</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                            <textarea  name="message" placeholder="Your Message "></textarea> 
-                    </div>
-                    <div class="row">
+                        <textarea  name="message" placeholder="Your Message "></textarea> 
+                        
                         <div class="submit-button">
                             <input type="submit" value="Send it!">
                         </div>
-                    </div>
-                </form>
+                        
+                    </form>
 
-                
-                <div class="info">
-                    <h4>Location</h4>
-                    <p>Bendigo</p>         
-                </div>
-
-                <div class="row boxy">
-                    <div class="col span_1_of_2">
-                        <div class="info inf">
-                            <h4>Phone</h4>
-                            <p>+61342342342</p>   
-                        </div>      
+                    
+                    <div class="info">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <h4>Location</h4>
+                        <p>Bendigo</p>         
                     </div>
-                    <div class="col span_1_of_2">
-                        <div class="info inf">
-                            <h4>Email</h4>
-                            <p>mann@service.info</p>      
-                        </div>   
+
+                    <div class="row">
+                        <div class="col span_1_of_2">
+                            <div class="info">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <h4>Phone</h4>
+                                <p>+61342342342</p>   
+                            </div>      
+                        </div>
+                        <div class="col span_1_of_2">
+                            <div class="info">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <h4>Email</h4>
+                                <p>mann@service.info</p>      
+                            </div>   
+                        </div>
                     </div>
                 </div>
             </div>
