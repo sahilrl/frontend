@@ -421,11 +421,11 @@ textarea {
 } 
 
   .select-box select {
-    background-color: #8066ec;
-    color: #fff;
+    background-color: #fff;
+    color: #8066ec;
     padding: 10px;
     width: 100%;
-    border: none;
+    /* border: none; */
     font-size: 90%;
     cursor: pointer;
   }
@@ -437,6 +437,12 @@ textarea {
   }
 
 
+  /* Map */
+.map {
+    width: 100%;
+    margin-top: 80px;
+}
+
 /* ------------------------------------------ */
 /* Footer */
 /* ------------------------------------------ */
@@ -444,7 +450,6 @@ textarea {
 footer {
     background-color: #333;
     padding: 50px;
-    margin-top: 80px;
 }
 
 .footer-nav {
