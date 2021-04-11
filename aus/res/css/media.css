@@ -1,0 +1,95 @@
+/* header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: auto;
+    width: 400px;
+    float: left;
+    margin: -30px 0 0 50px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom: 0,2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #78e4e7;
+
+
+}
+
+.hero-text-box {
+    position: absolute;
+    box-sizing: border-box;
+    width: 1140px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    font-size: 300%;
+    font-weight: 1000;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+}
+
+.cartoon {
+    position: absolute;
+    height: 300px;
+    top: 60%;
+    right: 5%;
+} */
+
+/* big tablets to 1200px: 1025px to 1200px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%;}
+}
+
+
+/* small tablets to big tablets: 769px to 1024px */
+@media only screen and (max-width: 1024px) {
+    body { font-size: 18px; }
+    section { font-size: 80px 0; }
+    
+}
+
+
+/* small phones to small tablets: 481px to 768px */
+@media only screen and (max-width: 768px) {
+    
+}
+
+
+/* Small phone: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+}
