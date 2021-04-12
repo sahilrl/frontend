@@ -202,7 +202,7 @@ header {
     height: auto;
     width: 400px;
     float: left;
-    margin: -30px 0 0 50px;
+    margin: -20px 0 0 50px;
 }
 
 .main-nav {
@@ -252,7 +252,7 @@ header {
 
 .cartoon {
     position: absolute;
-    height: 300px;
+    height: 50%;
     top: 60%;
     right: 5%;
 }
