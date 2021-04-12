@@ -13,7 +13,7 @@
     .services-row .box {
         width: auto;
     }
-    .row-info { padding: 0; }
+    /* .row-info { padding: 0; } */
     .logo { width: 350px; margin-top: -10px;}
     .cartoon { height: 250px; top: 68%;} 
 } 
@@ -21,14 +21,20 @@
 
 /* small tablets to big tablets: 769px to 1024px */
 @media only screen and (max-width: 1024px) {
-    body { font-size: 90%; }
-    section { font-size: 80px 0; }
+    body { font-size: 95%; }
+    .section { padding-top: 10%; }
     .cartoon { height: 200px; top: 70%;}
     .img-about {
         display: block;
-        margin: 0 auto; 
-    }  
+        margin: 2% auto; 
+    }
+    .services-row .box { margin: 0 auto; width: 350px; height: 250px; }  
     
+    .services-row { max-width: 800px; margin: 0 auto 0 auto; }
+    
+    .long-copy { width: 80%; }
+
+    .points-about ul li {  width: 90%; margin: 0 auto; }
 }
 
 

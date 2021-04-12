@@ -57,7 +57,7 @@
 	width: 100%;
 }
 .span_1_of_2 {
-	width: 49%;
+	width: 49.002%;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
@@ -65,15 +65,15 @@
   .col {
     margin: 1% 0 1% 0%;
   }
-  .span_1_of_4,
-  .span_2_of_4,
-  .span_3_of_4,
-  .span_4_of_4,
-  .span_3_of_3,
-  .span_2_of_3,
-  .span_1_of_3,
-  .span_2_of_2,
-  .span_1_of_2 {
+  .about .span_1_of_2 {
     width: 100%;
   }
+  .span_1_of_3 {
+    width: 50%;
+  }
+  .contact .col {
+    margin: 1% 1% 1% 0;
+  }
 }
+
+
