@@ -8,6 +8,10 @@
 /* BASIC SETUP */
 /* ------------------------------------------ */
 
+img {
+    max-width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -290,22 +294,33 @@ header {
 /* ------------------------------------------ */
 
 
-.services-row .box {
+.services-row .grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.services-row .grid-parent .grid-child {
+    display: grid;
     position: relative;
     width: 100%;
     height: 250px;
     overflow: hidden;
-    /* box-shadow: -10px 10px 20px #555; */
+    
 }
 
-.services-row .box img {
+.services-row .grid-child img {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.5s;
     box-sizing: border-box;
 }
-.services-row .box:hover img{
+.services-row .grid-child:hover img{
     transform: scale(1.2);
 }
 
@@ -313,8 +328,8 @@ header {
 .services-row .child {
     position: relative;
     top: 160px;
-    width: 250px;
-    height: 70px;
+    width: 70%;
+    height: 30%;
     overflow: hidden;
     background: linear-gradient(3.88deg, #303B47 -12.15%, rgba(255, 255, 255, 0) 293.83%);   
     transition: transform 0.5s; 
@@ -322,26 +337,26 @@ header {
 
 
 
-.services-row .box  h3 {
+.services-row .grid-child  h3 {
     position: absolute;
     color: #fff;
     transition: transform 0.5s;
     padding: 10px 0 0 10px;
 }
 
-.services-row .box:hover .child h3 {
+.services-row .grid-child:hover .child h3 {
     transform: translateX(-100%);
 }
 
 
-.services-row .box .child p {
+.services-row .grid-child .child p {
     font-size: 120%;
     padding: 20px 0 0 50px;
     transform: translateX(100%); 
     transition: transform 0.5s; 
 }
 
-.services-row .box:hover .child p {
+.services-row .grid-child:hover .child p {
     color: #fff;
     transform: translateX(0%);
 
