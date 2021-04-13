@@ -42,3 +42,8 @@
     .services-row .grid-parent { grid-template-columns: 1fr; margin: 0 50px; gap: 10px;  }
     .contain { width: 90%; }
 }
+
+
+@media only screen and (max-width: 888px) { 
+    nav ul { display: none;}
+}
