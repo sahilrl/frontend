@@ -35,10 +35,10 @@
 
 /* Small phone: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    .logo { width: 200px; margin-top: -10px; }
+    .logo { width: 300px; margin-top: -10px; }
     body { font-size: 14px; }
     .section { padding: 40px 0; }
-    .cartoon { height: 20%; top: 85%; }
+    .cartoon { height: 20%; top: 90%; }
     .services-row .grid-parent { grid-template-columns: 1fr; margin: 0 50px; gap: 10px;  }
     .contain { width: 90%; }
 }

@@ -8,6 +8,12 @@
 /* BASIC SETUP */
 /* ------------------------------------------ */
 
+.about::after { 
+    content: "";
+    display: block; 
+    clear: both;
+  }
+
 img {
     max-width: 100%;
 }
@@ -34,6 +40,13 @@ html {
 /* Reusable components */
 /* ------------------------------------------ */
 
+/* --------Fonts--------------- */
+@font-face {
+    font-family: Aileron;
+    src: url(/vendors/fonts/Aileron-Heavy.otf);
+  }
+
+
 /* --------section--------------- */
 .row {
     max-width: 1140px;
@@ -41,12 +54,12 @@ html {
 }
 
 .section {
-    padding-top: 100px;
+    padding: 50px 0;
 }
 
 /* --------headings--------------- */
 
-h1, 
+
 h2,
 h3 {
     font-weight: 300;
@@ -63,11 +76,14 @@ h1 {
 }
 
 h2 {
+    font-family: Aileron;
     margin-bottom: 30px;
-    font-size: 180%;
+    font-size: 48px;
     word-spacing: 2 px;
     text-align: center;
     letter-spacing: 1px;
+    color: #8066ec;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -277,7 +293,6 @@ header {
     padding-bottom: 12px;
     width: 100%;
     font-size: 105%;
-    font-weight: 250;
 }
 
 .points-about ion-icon {
@@ -292,7 +307,9 @@ header {
 /* ------------------------------------------ */
 /* Services */
 /* ------------------------------------------ */
-
+.services{
+    background-color: #f6f6f7;
+}
 
 .services-row .grid-parent {
     display: grid;
@@ -365,7 +382,9 @@ header {
 /* ------------------------------------------ */
 /* Contact form */
 /* ------------------------------------------ */
-
+.contact {
+    padding-bottom: 0;
+}
 
 input[type=text],
 input[type=email],
